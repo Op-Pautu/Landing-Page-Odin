@@ -1,0 +1,142 @@
+/* 
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+  }
+   */
+  /* body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, #ffffff, #424242);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  /* body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0;
+  }
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  flex-direction: column;
+  border: red solid;
+  
+}
+  header {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-top: 15px;
+  }
+
+  ul {
+    min-width: 40vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+
+.section1 {
+    width: 75vw;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  .image-holder{
+    margin-right: 5px;
+  }
+
+ .image-holder > img {
+    
+    height: 176px;
+    width: 365px;
+} 
+
+/* .figures {
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    border: solid blue;
+ 
+
+} */
+
+
+
+
+
+.container {
+  display: flex;
+  height: 200px;
+  width: 75vw;
+  border: red solid;
+  margin: 20px 20px;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 2px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 3;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+
+.section2 {
+  margin: 50px;
+  height: 100vh;
+}
