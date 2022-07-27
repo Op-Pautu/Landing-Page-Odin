@@ -13,4 +13,3 @@ function removeActiveClasses() {
     })
 }
 
-console.log(12)

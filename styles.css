@@ -1,36 +1,9 @@
-/* 
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: normal;
-  }
-   */
-  /* body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to top, #ffffff, #424242);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
-  /* body {
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    flex-direction: column;
-    margin: 0;
-  }
-*/
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -42,17 +15,25 @@ body {
   overflow: auto;
   margin: 0;
   flex-direction: column;
-  border: red solid;
+  
   
 }
   header {
-    width: 75vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+   
+  }
+  header, .section1 {
+    background-color: #1F2937;
   }
 
   .logo {
     margin-top: 15px;
+    font-size: 24px;
+    color: #F9FAF8;
   }
 
   ul {
@@ -63,10 +44,22 @@ body {
     
   }
 
+#hero-text {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
 
+#secondary-text, ul > li {
+  color: #E5E7EB;
+  font-size: 18px;
+}
 .section1 {
-    width: 75vw;
-    margin-top: 25px;
+
+    padding-top: 45px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+   
     display: flex;
     justify-content: space-between;
   } 
@@ -77,29 +70,33 @@ body {
 
  .image-holder > img {
     
-    height: 176px;
-    width: 365px;
+    height: 350px;
+    width: 500px;
 } 
 
-/* .figures {
-    width: 75vw;
-    height: 50vh;
-    display: flex;
-    border: solid blue;
- 
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
 
-} */
-
-
-
-
-
+main {
+  margin: 50px ;
+  background-color: white;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main > h2 {
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
-  height: 200px;
-  width: 75vw;
-  border: red solid;
-  margin: 20px 20px;
+  height: 65vh;
+  width: 90vw;
 }
 
 .panel {
@@ -137,6 +134,52 @@ body {
 
 
 .section2 {
-  margin: 50px;
-  height: 100vh;
+  margin: 25px;
+  height: 40vh;
+  width: 100%;
+  
+  display: flex;
+  background-color: #E5E7EB;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  text-align: end;
+  font-size: 16px;
+}
+
+footer {
+  padding: 25px;
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  font-size: 24px;
+
+}
+
+#quote {
+  font-style: light italic;
+  font-size: 36px;
+  color: #1F2937;
+
+}
+
+#information-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
 }
